@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		let userDefaults = NSUserDefaults.standardUserDefaults()
+		
+		let dimensionDefault = 4
+		let thresholdDefault = 2048
+		let defaults = [DefaultKeys.DimensionKey.rawValue: dimensionDefault, 
+			DefaultKeys.ThresholdKey.rawValue: thresholdDefault,
+			DefaultKeys.ScoreKey.rawValue: 0,
+			DefaultKeys.HighestScoreKey.rawValue: 0]
+		userDefaults.registerDefaults(defaults)
+
 		return true
 	}
 

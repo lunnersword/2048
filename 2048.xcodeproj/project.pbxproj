@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C02FD41AF85E1700213365 /* AppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C02FD31AF85E1700213365 /* AppearanceProvider.swift */; };
+		59C02FD61AF8949400213365 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C02FD51AF8949400213365 /* GameModel.swift */; };
+		59C02FD81AF8984600213365 /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C02FD71AF8984600213365 /* AuxiliaryModels.swift */; };
+		59C074B71B25C36F00777983 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C074B61B25C36F00777983 /* UIColor+Extensions.swift */; };
+		59C074B91B25CB0200777983 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C074B81B25CB0200777983 /* SKTAudio.swift */; };
 		59E641F71AA88B8C000ED8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E641F61AA88B8C000ED8DF /* AppDelegate.swift */; };
 		59E641F91AA88B8C000ED8DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E641F81AA88B8C000ED8DF /* ViewController.swift */; };
 		59E641FC1AA88B8C000ED8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E641FA1AA88B8C000ED8DF /* Main.storyboard */; };
 		59E641FE1AA88B8C000ED8DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E641FD1AA88B8C000ED8DF /* Images.xcassets */; };
 		59E642011AA88B8C000ED8DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E641FF1AA88B8C000ED8DF /* LaunchScreen.xib */; };
 		59E6420D1AA88B8C000ED8DF /* _048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6420C1AA88B8C000ED8DF /* _048Tests.swift */; };
+		59E9A8C21AC00CDC0068E210 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9A8C11AC00CDC0068E210 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59C02FD31AF85E1700213365 /* AppearanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceProvider.swift; sourceTree = "<group>"; };
+		59C02FD51AF8949400213365 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		59C02FD71AF8984600213365 /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
+		59C074B61B25C36F00777983 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		59C074B81B25CB0200777983 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
 		59E641F11AA88B8C000ED8DF /* 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E641F51AA88B8C000ED8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E641F61AA88B8C000ED8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +47,7 @@
 		59E642061AA88B8C000ED8DF /* 2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E6420B1AA88B8C000ED8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E6420C1AA88B8C000ED8DF /* _048Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _048Tests.swift; sourceTree = "<group>"; };
+		59E9A8C11AC00CDC0068E210 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59C02FD91AF8985100213365 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59C02FD51AF8949400213365 /* GameModel.swift */,
+				59C02FD71AF8984600213365 /* AuxiliaryModels.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		59E641E81AA88B8C000ED8DF = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				59E641F61AA88B8C000ED8DF /* AppDelegate.swift */,
+				59C02FD91AF8985100213365 /* Models */,
 				59E641F81AA88B8C000ED8DF /* ViewController.swift */,
+				59E9A8C11AC00CDC0068E210 /* TileView.swift */,
+				59C074B61B25C36F00777983 /* UIColor+Extensions.swift */,
+				59C02FD31AF85E1700213365 /* AppearanceProvider.swift */,
+				59C074B81B25CB0200777983 /* SKTAudio.swift */,
 				59E641FA1AA88B8C000ED8DF /* Main.storyboard */,
 				59E641FD1AA88B8C000ED8DF /* Images.xcassets */,
 				59E641FF1AA88B8C000ED8DF /* LaunchScreen.xib */,
@@ -213,7 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E641F91AA88B8C000ED8DF /* ViewController.swift in Sources */,
+				59C02FD81AF8984600213365 /* AuxiliaryModels.swift in Sources */,
+				59C02FD41AF85E1700213365 /* AppearanceProvider.swift in Sources */,
+				59E9A8C21AC00CDC0068E210 /* TileView.swift in Sources */,
+				59C074B71B25C36F00777983 /* UIColor+Extensions.swift in Sources */,
+				59C074B91B25CB0200777983 /* SKTAudio.swift in Sources */,
 				59E641F71AA88B8C000ED8DF /* AppDelegate.swift in Sources */,
+				59C02FD61AF8949400213365 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +373,7 @@
 				INFOPLIST_FILE = 2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,6 +384,7 @@
 				INFOPLIST_FILE = 2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -407,6 +441,7 @@
 				59E642121AA88B8C000ED8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59E642131AA88B8C000ED8DF /* Build configuration list for PBXNativeTarget "2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +450,7 @@
 				59E642151AA88B8C000ED8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
